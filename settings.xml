@@ -1,36 +1,37 @@
+<<<<<<< HEAD
 settings>
+=======
+<settings>
+    <servers>
+        <server>
+            <id>nextwork-nextwork-packages</id>
+            <username>aws</username>
+            <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+        </server>
+    </servers>
+>>>>>>> d72b7a8da64f54466f6181af182bbea345d95e0f
 
+    <profiles>
+        <profile>
+            <id>nextwork-nextwork-packages</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>nextwork-nextwork-packages</id>
+                    <url>https://nextwork-730335355786.d.codeartifact.ap-southeast-1.amazonaws.com/maven/nextwork-packages/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 
-
-        <servers>
-		                  <server>
-					                                <id>nextwork-nextwork-packages</id>
-									                                  <username>aws</username>
-													                                        <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
-																		                                        </server>
-																							                                </servers>
-
-																											                                <profiles>
-																																                                          <profile>
-																																						                                                        <id>nextwork-nextwork-packages</id>
-																																													                                                          <activation>
-																																																					                                                                          <activeByDefault>true</activeByDefault>
-																																																														                                                                              </activation>
-																																																																							                                                                                      <repositories>
-																																																																																		                                                                                                    <repository>
-																																																																																															                                                                                                                  <id>nextwork-nextwork-packages</id>
-																																																																																																													                                                                                                                        <url>https://nextwork-730335355786.d.codeartifact.ap-southeast-1.amazonaws.com/maven/nextwork-packages/</url>
-																																																																																																																												                                                                                                                            </repository>
-																																																																																																																																											                                                                                                                                    </repositories>
-																																																																																																																																																											                                                                                                                                      </profile>
-																																																																																																																																																																											                                                                                                                                </profiles>
-
-																																																																																																																																																																																											        <mirrors>
-																																																																																																																																																																																													                  <mirror>
-																																																																																																																																																																																																                                <id>nextwork-nextwork-packages</id>
-																																																																																																																																																																																																				                                  <name>nextwork-nextwork-packages</name>
-																																																																																																																																																																																																								                                        <url>https://nextwork-730335355786.d.codeartifact.ap-southeast-1.amazonaws.com/maven/nextwork-packages/</url>
-																																																																																																																																																																																																													                                          <mirrorOf>*</mirrorOf>
-																																																																																																																																																																																																																		                                              </mirror>
-																																																																																																																																																																																																																							                                          </mirrors>
-																																																																																																																																																																																																																											  </settings>
+    <mirrors>
+        <mirror>
+            <id>nextwork-nextwork-packages</id>
+            <name>nextwork-nextwork-packages</name>
+            <url>https://nextwork-730335355786.d.codeartifact.ap-southeast-1.amazonaws.com/maven/nextwork-packages/</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+</settings>
